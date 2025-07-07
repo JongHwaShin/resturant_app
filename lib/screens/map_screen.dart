@@ -252,8 +252,8 @@ class _MapScreenState extends State<MapScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.red,
-        foregroundColor: Colors.white,
+        backgroundColor: Colors.amber,
+        foregroundColor: Colors.black,
         title: const Text('내주변'),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
@@ -378,6 +378,8 @@ class _MapScreenState extends State<MapScreen> {
         onPressed: () {
           _getCurrentLocation();
         },
+        backgroundColor: Colors.amber,
+        foregroundColor: Colors.black,
         child: const Icon(Icons.my_location),
       ),
     );

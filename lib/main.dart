@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
+import 'themes/app_theme.dart';
 
 /// 앱 진입점(main) - Supabase 초기화 및 앱 실행
 void main() async {
@@ -21,11 +23,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: '맛집지도',
-      theme: ThemeData(
-        primarySwatch: Colors.red,
-        primaryColor: Colors.red,
-      ),
-      home: const HomeScreen(), // 앱 시작 시 메인화면(HomeScreen) 표시
+      theme: AppTheme.themeData,
+      home: const SplashScreen(), // 앱 시작 시 SplashScreen 표시
+      routes: {
+        '/home': (context) => const HomeScreen(),
+      },
     );
   }
 }

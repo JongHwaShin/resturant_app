@@ -10,9 +10,9 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[100],
       appBar: AppBar(
-        backgroundColor: Colors.red,
-        foregroundColor: Colors.white,
-        title: const Text('맛집지도'),
+        backgroundColor: Colors.amber,
+        foregroundColor: Colors.black,
+        title: const Text('라멘하우스'),
         centerTitle: true,
         elevation: 0,
       ),
@@ -24,21 +24,21 @@ class HomeScreen extends StatelessWidget {
             const SizedBox(height: 40),
             // 앱 타이틀
             const Text(
-              '맛집을 찾아보세요!',
+              '라멘하우스',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
-                color: Colors.black87,
+                color: Colors.brown,
               ),
               textAlign: TextAlign.center,
             ),
             const SizedBox(height: 10),
             // 앱 서브타이틀
             const Text(
-              '주변 맛집을 쉽게 찾아보세요',
+              '라면먹으러가볼까요?',
               style: TextStyle(
                 fontSize: 16,
-                color: Colors.grey,
+                color: Colors.orange,
               ),
               textAlign: TextAlign.center,
             ),
